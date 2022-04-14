@@ -11,8 +11,10 @@
 ### コピー
 - ホスト → コンテナへのコピー  
 `% docker cp [ホストファイルのパス] [コンテナ指定]:[コンテナのパス]`  
+例）`% docker cp command/sample.txt mycentos:/opt`  
 - コンテナ → ホストへのコピー  
 `% docker cp [コンテナ指定]:[コンテナファイルのパス] [ホストのパス] `  
+例)`% docker cp mycentos:/opt/container.txt /Users/adn21025/dockerBasic`  
 
 ### Image
 - image確認  
