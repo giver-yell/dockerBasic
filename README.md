@@ -48,7 +48,9 @@
 `% docker logs -f mycentos`  
 
 ### コンテナにボリュームをマウント（永続化）
-`docker run -v ホストのパス:コンテナのパス イメージ名`  
+`% docker run -v ホストのパス:コンテナのパス イメージ名`  
+例)`% docker run -v /Users/adn21025/dockerBasic/test/:/usr/share/nginx/html --name mynginx -p 8080:80 nginx:1.16`  
+
 
 ### トラブルの時など使用頻度が低いコマンド
 #### 詳細情報取得
