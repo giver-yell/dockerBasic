@@ -11,8 +11,10 @@
 ### コピー
 - ホスト → コンテナへのコピー  
 `% docker cp [ホストファイルのパス] [コンテナ指定]:[コンテナのパス]`  
+例）`% docker cp command/sample.txt mycentos:/opt`  
 - コンテナ → ホストへのコピー  
 `% docker cp [コンテナ指定]:[コンテナファイルのパス] [ホストのパス] `  
+例)`% docker cp mycentos:/opt/container.txt /Users/adn21025/dockerBasic`  
 
 ### Image
 - image確認  
@@ -36,6 +38,11 @@
 - 起動中のコンテナを強制削除  
 `% docker rm -f mycentos`  
 
+### log
+- ログ出力  
+`% docker logs mycentos`  
+- リアルタイムログ出力
+`% docker logs -f mycentos`
 
 ### 参考動画
 Udemy 駆け出しエンジニアのためのDocker入門
