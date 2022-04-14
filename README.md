@@ -47,6 +47,10 @@
 ### トラブルの時など使用頻度が低いコマンド
 #### 詳細情報取得
 `% docker inspect mycentos`  
+#### Docker imageのダウンロード
+※pullの後ろに*プライベートイメージレジストリを付けると、DokerHub以外からダウンロードできる  
+`% doker pull イメージ名:タグ [レジストリURL]`  
+例)`% docker pull php:8.0`  
 
 ### 参考動画
 Udemy 駆け出しエンジニアのためのDocker入門
