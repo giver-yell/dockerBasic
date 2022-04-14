@@ -38,6 +38,11 @@
 - 起動中のコンテナを強制削除  
 `% docker rm -f mycentos`  
 
+### log
+- ログ出力  
+`% docker logs mycentos`  
+- リアルタイムログ出力
+`% docker logs -f mycentos`
 
 ### 参考動画
 Udemy 駆け出しエンジニアのためのDocker入門
