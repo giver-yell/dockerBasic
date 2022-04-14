@@ -5,6 +5,11 @@
 - コンテナ操作  
 `% docker exec -it mycentos /bin/bash`  
 
+### Image
+- image確認  
+`% docker images`  
+
+
 ### 起動、停止
 - centOS起動  
 `$ docker start mycentos`  
