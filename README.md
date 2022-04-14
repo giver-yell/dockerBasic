@@ -8,12 +8,17 @@
 ### コンテナ操作  
 `% docker exec -it mycentos /bin/bash`  
 
+### コピー
+- ホスト → コンテナへのコピー  
+`% docker cp [ホストファイルのパス] [コンテナ指定]:[コンテナのパス]`  
+- コンテナ → ホストへのコピー  
+`% docker cp [コンテナ指定]:[コンテナファイルのパス] [ホストのパス] `  
+
 ### Image
 - image確認  
 `% docker images`  
 - 停止中のコンテナimage削除  
-`% docker rmi `  
-
+`% docker rmi `   
 
 ### 起動、停止
 - centOS起動  
