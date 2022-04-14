@@ -31,6 +31,9 @@
 `% docker restart mycentos`  
 - centOSに名前をつけて起動  
 `% docker run -it --name mycentos centos:8 /bin/bash`  
+- portを指定して起動  
+`% docker run --name [コンテナ名] -p [ローカルのポート]:[nginxのポート] nginx:1.16`  
+例)`% docker run --name mynginx -p 8080:80 nginx:1.16`  
 
 ### 削除
 - 停止中のコンテナ削除  
