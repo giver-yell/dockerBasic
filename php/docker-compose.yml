@@ -1,0 +1,24 @@
+version: "3.8"
+services:
+  php:
+    build:
+      context: ./docker/php
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - "80:80"
+  db:
+    build:
+      context: ./docker/db
+      dockerfile: Dockerfile
+    volumes:
+      - ./docker/db/data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      # - MYSQL_DATABASE: study
+      # - MYSQL_USER: docker
+      # - MYSQL_PASSWORD: docker
+      # - TZ: 'Asia/Tokyo'
