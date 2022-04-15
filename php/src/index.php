@@ -1,7 +1,7 @@
 <?php
 echo 'helloworld';
 
-$mysqli = new mysqli('db', 'root', 'pass', 'mysql');
+$mysqli = new mysqli('db', 'root', 'root', 'mysql');
 if($mysqli->connect_error) {
     echo '接続失敗'.PHP_EOL;
     exit();
