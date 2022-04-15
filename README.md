@@ -5,11 +5,13 @@
 build前でも実行可能  
 →フレームワークなどのインストールに便利  
 `% docker-compose run サービス名 実行したいコマンド`  
-- コンテナをストップ&削除
+- コンテナをストップ&削除  
 `% docker-compose down`  
-- コンテナを全て再起動
+- コンテナを全て再起動  
 `% docker-compose restart`  
-
+- docker-compose.ymlで管理されているコンテナ一覧を表示  
+→複数プロジェクトを立ち上げている時に便利  
+`% docker-compose ps`  
 
 
 ## Dockerコマンド
