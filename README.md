@@ -74,6 +74,10 @@
 `% docker history イメージ指定`  
 
 ## Dockerfile
+### RUN と CMD  
+どちらもコマンド実行だが、実行タイミングが異なる  
+RUN: Dockerfile → イメージ  
+CMD: イメージ → コンテナ  
 ### COPY と ADD
 どちらもファイルをイメージに追加するコマンド  
 COPYが推奨  
