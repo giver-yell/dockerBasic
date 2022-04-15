@@ -5,6 +5,7 @@
 build前でも実行可能  
 →フレームワークなどのインストールに便利  
 `% docker-compose run サービス名 実行したいコマンド`  
+例)`% docker-compose run php composer create-project --prefer-dist laravel/laravel .`  
 - コンテナをストップ&削除  
 `% docker-compose down`  
 - コンテナを全て再起動  
