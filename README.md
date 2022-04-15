@@ -4,6 +4,9 @@
 
 ### Build  
 `% docker build test`  
+- -tでbuldしたDocker imageに名前を付ける  
+例)runディレクトリにあるdockerファイルを実行して、dockerfile-run-nginxと名前を付ける  
+`% docker build -t dockerfile-run-nginx run`  
 
 ### コンテナ操作  
 `% docker exec -it mycentos /bin/bash`  
