@@ -1,5 +1,17 @@
 # dockerBasic
 
+## docker-composeコマンド
+- サービス1つを指定して実行  
+build前でも実行可能  
+→フレームワークなどのインストールに便利  
+`% docker-compose run サービス名 実行したいコマンド`  
+- コンテナをストップ&削除
+`% docker-compose down`  
+- コンテナを全て再起動
+`% docker-compose restart`  
+
+
+
 ## Dockerコマンド
 
 ### Build  
