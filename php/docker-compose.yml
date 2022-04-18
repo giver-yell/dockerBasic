@@ -23,4 +23,6 @@ services:
       MYSQL_DATABASE: study
       MYSQL_USER: root
       MYSQL_PASSWORD: root
+      # root userに外部からのアクセス権付与
+      MYSQL_ROOT_HOST: '%'
       TZ: Asia/Tokyo
